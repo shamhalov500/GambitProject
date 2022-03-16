@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		0FE6EAE027DCC39400E88AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6EADF27DCC39400E88AC5 /* AppDelegate.swift */; };
 		0FE6EAE227DCC39400E88AC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6EAE127DCC39400E88AC5 /* SceneDelegate.swift */; };
-		0FE6EAE427DCC39400E88AC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6EAE327DCC39400E88AC5 /* ViewController.swift */; };
 		0FE6EAE727DCC39400E88AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE6EAE527DCC39400E88AC5 /* Main.storyboard */; };
 		0FE6EAE927DCC39700E88AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE6EAE827DCC39700E88AC5 /* Assets.xcassets */; };
 		0FE6EAEC27DCC39700E88AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE6EAEA27DCC39700E88AC5 /* LaunchScreen.storyboard */; };
+		0FE6EAF627DCDB5D00E88AC5 /* GambitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6EAF527DCDB5D00E88AC5 /* GambitModel.swift */; };
+		0FE6EAF827DCDE0900E88AC5 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6EAF727DCDE0900E88AC5 /* NetWork.swift */; };
+		0FE6EAFB27DCE01000E88AC5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0FE6EAFA27DCE01000E88AC5 /* Alamofire */; };
+		0FE6EB0127DCE4AC00E88AC5 /* GambitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6EB0027DCE4AC00E88AC5 /* GambitTableViewCell.swift */; };
+		0FE6EB0327DCE4E200E88AC5 /* GambitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6EB0227DCE4E200E88AC5 /* GambitTableViewController.swift */; };
+		0FE6EB0827E0EC2900E88AC5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FE6EB0727E0EC2900E88AC5 /* SDWebImage */; };
+		0FF2E16D27E23B7E006C1DFB /* cellRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2E16C27E23B7E006C1DFB /* cellRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FE6EADC27DCC39400E88AC5 /* Gambit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gambit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE6EADF27DCC39400E88AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE6EAE127DCC39400E88AC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0FE6EAE327DCC39400E88AC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FE6EAE627DCC39400E88AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FE6EAE827DCC39700E88AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FE6EAEB27DCC39700E88AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FE6EAED27DCC39700E88AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE6EAF527DCDB5D00E88AC5 /* GambitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambitModel.swift; sourceTree = "<group>"; };
+		0FE6EAF727DCDE0900E88AC5 /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		0FE6EB0027DCE4AC00E88AC5 /* GambitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambitTableViewCell.swift; sourceTree = "<group>"; };
+		0FE6EB0227DCE4E200E88AC5 /* GambitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambitTableViewController.swift; sourceTree = "<group>"; };
+		0FF2E16C27E23B7E006C1DFB /* cellRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellRadius.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE6EB0827E0EC2900E88AC5 /* SDWebImage in Frameworks */,
+				0FE6EAFB27DCE01000E88AC5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +70,13 @@
 			children = (
 				0FE6EADF27DCC39400E88AC5 /* AppDelegate.swift */,
 				0FE6EAE127DCC39400E88AC5 /* SceneDelegate.swift */,
-				0FE6EAE327DCC39400E88AC5 /* ViewController.swift */,
-				0FE6EAE527DCC39400E88AC5 /* Main.storyboard */,
+				0FE6EB0027DCE4AC00E88AC5 /* GambitTableViewCell.swift */,
+				0FE6EB0227DCE4E200E88AC5 /* GambitTableViewController.swift */,
+				0FE6EAF727DCDE0900E88AC5 /* NetWork.swift */,
+				0FE6EAF527DCDB5D00E88AC5 /* GambitModel.swift */,
 				0FE6EAE827DCC39700E88AC5 /* Assets.xcassets */,
+				0FE6EAE527DCC39400E88AC5 /* Main.storyboard */,
+				0FF2E16C27E23B7E006C1DFB /* cellRadius.swift */,
 				0FE6EAEA27DCC39700E88AC5 /* LaunchScreen.storyboard */,
 				0FE6EAED27DCC39700E88AC5 /* Info.plist */,
 			);
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = Gambit;
+			packageProductDependencies = (
+				0FE6EAFA27DCE01000E88AC5 /* Alamofire */,
+				0FE6EB0727E0EC2900E88AC5 /* SDWebImage */,
+			);
 			productName = Gambit;
 			productReference = 0FE6EADC27DCC39400E88AC5 /* Gambit.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +114,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+					"New-1",
+				);
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
@@ -111,6 +135,10 @@
 				Base,
 			);
 			mainGroup = 0FE6EAD327DCC39400E88AC5;
+			packageReferences = (
+				0FE6EAF927DCE00F00E88AC5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0FE6EB0627E0EC2900E88AC5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 0FE6EADD27DCC39400E88AC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FE6EAE427DCC39400E88AC5 /* ViewController.swift in Sources */,
 				0FE6EAE027DCC39400E88AC5 /* AppDelegate.swift in Sources */,
+				0FE6EB0127DCE4AC00E88AC5 /* GambitTableViewCell.swift in Sources */,
+				0FF2E16D27E23B7E006C1DFB /* cellRadius.swift in Sources */,
+				0FE6EAF627DCDB5D00E88AC5 /* GambitModel.swift in Sources */,
 				0FE6EAE227DCC39400E88AC5 /* SceneDelegate.swift in Sources */,
+				0FE6EAF827DCDE0900E88AC5 /* NetWork.swift in Sources */,
+				0FE6EB0327DCE4E200E88AC5 /* GambitTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +356,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +392,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FE6EAF927DCE00F00E88AC5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0FE6EB0627E0EC2900E88AC5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FE6EAFA27DCE01000E88AC5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FE6EAF927DCE00F00E88AC5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0FE6EB0727E0EC2900E88AC5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FE6EB0627E0EC2900E88AC5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FE6EAD427DCC39400E88AC5 /* Project object */;
 }
