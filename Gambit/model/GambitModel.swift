@@ -14,6 +14,7 @@ struct Gambit: Decodable {
     var oldPrice: Int
     var description: String
     var image: String
+    var isFavourite: Bool?
 //    var nutritionFacts: String
 //    var weight: Int
 //    var calories: Int

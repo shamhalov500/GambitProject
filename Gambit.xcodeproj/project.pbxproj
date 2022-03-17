@@ -68,19 +68,43 @@
 		0FE6EADE27DCC39400E88AC5 /* Gambit */ = {
 			isa = PBXGroup;
 			children = (
-				0FE6EADF27DCC39400E88AC5 /* AppDelegate.swift */,
-				0FE6EAE127DCC39400E88AC5 /* SceneDelegate.swift */,
-				0FE6EB0027DCE4AC00E88AC5 /* GambitTableViewCell.swift */,
-				0FE6EB0227DCE4E200E88AC5 /* GambitTableViewController.swift */,
-				0FE6EAF727DCDE0900E88AC5 /* NetWork.swift */,
-				0FE6EAF527DCDB5D00E88AC5 /* GambitModel.swift */,
+				0FFBB4C327E38DCC00807C34 /* model */,
+				0FFBB4C427E38DD600807C34 /* view */,
+				0FFBB4C527E38DDE00807C34 /* controller */,
 				0FE6EAE827DCC39700E88AC5 /* Assets.xcassets */,
-				0FE6EAE527DCC39400E88AC5 /* Main.storyboard */,
-				0FF2E16C27E23B7E006C1DFB /* cellRadius.swift */,
+				0FE6EAE127DCC39400E88AC5 /* SceneDelegate.swift */,
+				0FE6EADF27DCC39400E88AC5 /* AppDelegate.swift */,
 				0FE6EAEA27DCC39700E88AC5 /* LaunchScreen.storyboard */,
 				0FE6EAED27DCC39700E88AC5 /* Info.plist */,
 			);
 			path = Gambit;
+			sourceTree = "<group>";
+		};
+		0FFBB4C327E38DCC00807C34 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0FE6EAF527DCDB5D00E88AC5 /* GambitModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0FFBB4C427E38DD600807C34 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0FE6EAE527DCC39400E88AC5 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		0FFBB4C527E38DDE00807C34 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FE6EAF727DCDE0900E88AC5 /* NetWork.swift */,
+				0FE6EB0027DCE4AC00E88AC5 /* GambitTableViewCell.swift */,
+				0FE6EB0227DCE4E200E88AC5 /* GambitTableViewController.swift */,
+				0FF2E16C27E23B7E006C1DFB /* cellRadius.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

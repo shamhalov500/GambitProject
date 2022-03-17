@@ -44,7 +44,22 @@ class GambitTableViewController: UITableViewController, GambitPresenterDelegate 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->Int {
         return objects.count
     }
-    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let favourite = favouriteAction(at: indexPath)
+        return UISwipeActionsConfiguration(actions: [favourite])
+    }
+
+    func favouriteAction(at indexPath: IndexPath) -> UIContextualAction {
+        var object = objects[indexPath.row]
+        let action = UIContextualAction(style: .normal, title: "") { (action, view, completion) in
+        object.isFavourite = !(object.isFavourite ?? true)
+        self.objects[indexPath.row] = object
+        completion(true)
+        }
+        action.backgroundColor = object.isFavourite ?? true ? .systemGray: .systemPink
+        action.image = UIImage(systemName:  "heart")
+        return action
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
