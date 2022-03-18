@@ -17,17 +17,16 @@ class GambitTableViewCell: UITableViewCell {
     @IBOutlet weak var imageViewDish: UIImageView!
     @IBOutlet weak var minButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var basketButton: UIButton!
     
 
         
-    
-    
     let defaults = UserDefaults.standard
     var variations = 0
     var product: Gambit?
-    func hideMinus(_ action: Bool){
-        minButton.isHidden = action
-        variationsLabel.isHidden = action
+    func hideBasket(_ action: Bool){
+        basketButton.isHidden = action
+        
     }
     func saveVariations(_ varfood: Int) {
         variationsLabel.text = String(varfood)
@@ -43,42 +42,48 @@ class GambitTableViewCell: UITableViewCell {
         self.imageViewDish.downloaded(from: gambit.image)
         
         //imageViewDish.image = UIImage(named: object.image)
-        
+//
         if defaults.integer(forKey: String(product?.id ?? 0))  > 0 {
             self.variationsLabel.text = String(defaults.integer(forKey: String(product?.id ?? 0)))
             variations = defaults.integer(forKey: String(product?.id ?? 0))
-            hideMinus(false)
-        } else {
-            hideMinus(true)
+            hideBasket(true)
         }
-    }
+ }
     func calculation(_ calculation: Bool) {
         if (calculation) {
             variations = variations + 1
         } else {
             variations = variations - 1
         }
+        
     }
     @IBAction func pressButtonMin(_ sender: UIButton) {
-        guard variations > 0 else { return }
-        if variations == 1 {
-            hideMinus(true)
-        }
-        calculation(false)
+        calculation(true)
         saveVariations(variations)
-        if variations > 0 {
-            hideMinus(false)
-        }
-        
-        
+        hideBasket(true)
     }
-    
+//        guard variations > 0 else { return }
+//        if variations == 1 {
+//            hideMinus(true)
+//        }
+//        calculation(false)
+//        saveVariations(variations)
+//        if variations > 0 {
+//            hideMinus(false)
+//        }
+//
+//
+   
+    @IBAction func korzina(_ sender: UIButton) {
+        calculation(true)
+        saveVariations(variations)
+    }
+//
     @IBAction func pressButtonPlus(_ sender: UIButton) {
         calculation(true)
         saveVariations(variations)
-        hideMinus(false)
         if variations == 0 {
-            hideMinus(true)
+            hideBasket(true)
         }
     }
 }
@@ -106,4 +111,6 @@ class GambitTableViewCell: UITableViewCell {
     
     
 }
+
+
 

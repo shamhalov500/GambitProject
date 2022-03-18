@@ -9,11 +9,11 @@
         <!--GAMBIT-->
         <scene sceneID="lXv-FN-32M">
             <objects>
-                <tableViewController id="tNL-LG-TwI" customClass="GambitTableViewController" customModule="Gambit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="tNL-LG-TwI" customClass="GambitTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Yj0-2E-47M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.24608737780000001" blue="0.58590287060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92644888160000005" green="0.26348292829999997" blue="0.5804085135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="gambitCell" rowHeight="152" id="M7a-sh-eLP" customClass="GambitTableViewCell" customModule="Gambit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="152"/>
@@ -49,7 +49,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrG-Od-lVw" customClass="radiusButton" customModule="Gambit" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrG-Od-lVw">
                                             <rect key="frame" x="286" y="95" width="32" height="32"/>
                                             <color key="backgroundColor" red="1" green="0.24608737779440326" blue="0.58590287064885427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -58,16 +58,11 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="-"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="pressButtonMin:" destination="M7a-sh-eLP" eventType="touchUpInside" id="T5R-sO-Bd6"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzT-go-nVx" customClass="radiusButton" customModule="Gambit" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzT-go-nVx">
                                             <rect key="frame" x="362" y="95" width="32" height="32"/>
                                             <color key="backgroundColor" red="1" green="0.24608737780000001" blue="0.58590287060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -76,11 +71,6 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="+"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="pressButtonPlus:" destination="M7a-sh-eLP" eventType="touchUpInside" id="9dv-WO-HGD"/>
                                             </connections>
@@ -95,15 +85,28 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGz-y7-Oaz">
+                                            <rect key="frame" x="286" y="95" width="108" height="32"/>
+                                            <color key="backgroundColor" red="1" green="0.24608737780000001" blue="0.58590287060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title=" корзина">
+                                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="korzina:" destination="M7a-sh-eLP" eventType="touchUpInside" id="raI-ls-7Dr"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="h6d-Vl-Qj0" firstAttribute="leading" secondItem="Map-x3-0Gy" secondAttribute="trailing" constant="35" id="4D4-Wy-bJh"/>
                                         <constraint firstAttribute="bottom" secondItem="EzT-go-nVx" secondAttribute="bottom" constant="25" id="691-7M-sXX"/>
                                         <constraint firstAttribute="trailing" secondItem="EzT-go-nVx" secondAttribute="trailing" constant="20" symbolic="YES" id="AFD-KT-352"/>
+                                        <constraint firstAttribute="trailing" secondItem="qGz-y7-Oaz" secondAttribute="trailing" constant="20" symbolic="YES" id="Ctx-Ey-l8d"/>
                                         <constraint firstAttribute="trailing" secondItem="h6d-Vl-Qj0" secondAttribute="trailing" constant="60" id="GOS-PG-dbf"/>
                                         <constraint firstItem="mPq-o9-occ" firstAttribute="leading" secondItem="tFz-GD-gGL" secondAttribute="leading" constant="183" id="Hxe-C6-yjX"/>
                                         <constraint firstItem="mPq-o9-occ" firstAttribute="top" secondItem="h6d-Vl-Qj0" secondAttribute="bottom" constant="43.5" id="NSf-dJ-ftj"/>
                                         <constraint firstItem="EzT-go-nVx" firstAttribute="top" secondItem="h6d-Vl-Qj0" secondAttribute="bottom" constant="43.5" id="OnY-xG-3Ph"/>
+                                        <constraint firstItem="qGz-y7-Oaz" firstAttribute="leading" secondItem="mPq-o9-occ" secondAttribute="trailing" constant="41" id="SBc-XJ-jaf"/>
                                         <constraint firstItem="n33-sm-hxB" firstAttribute="leading" secondItem="xrG-Od-lVw" secondAttribute="trailing" constant="14" id="X3J-jl-F7j"/>
                                         <constraint firstItem="xrG-Od-lVw" firstAttribute="leading" secondItem="mPq-o9-occ" secondAttribute="trailing" constant="41" id="YTz-xx-aeG"/>
                                         <constraint firstItem="Map-x3-0Gy" firstAttribute="leading" secondItem="tFz-GD-gGL" secondAttribute="leading" id="akn-FI-VF2"/>
@@ -113,10 +116,13 @@
                                         <constraint firstItem="n33-sm-hxB" firstAttribute="firstBaseline" secondItem="xrG-Od-lVw" secondAttribute="baseline" id="jgO-EO-pdh"/>
                                         <constraint firstItem="EzT-go-nVx" firstAttribute="leading" secondItem="n33-sm-hxB" secondAttribute="trailing" constant="16" id="oX6-mI-2mc"/>
                                         <constraint firstAttribute="bottom" secondItem="mPq-o9-occ" secondAttribute="bottom" constant="25" id="pyB-nZ-uu0"/>
+                                        <constraint firstAttribute="bottom" secondItem="qGz-y7-Oaz" secondAttribute="bottom" constant="25" id="wLg-8B-k8i"/>
+                                        <constraint firstItem="qGz-y7-Oaz" firstAttribute="top" secondItem="h6d-Vl-Qj0" secondAttribute="bottom" constant="43.5" id="y6a-re-UrM"/>
                                         <constraint firstItem="h6d-Vl-Qj0" firstAttribute="top" secondItem="tFz-GD-gGL" secondAttribute="top" constant="31" id="ynF-F7-25e"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="basketButton" destination="qGz-y7-Oaz" id="eMq-Z8-Wn2"/>
                                     <outlet property="imageViewDish" destination="Map-x3-0Gy" id="2lI-Na-3Fi"/>
                                     <outlet property="minButton" destination="xrG-Od-lVw" id="1Fv-Tn-nO0"/>
                                     <outlet property="nameLabel" destination="h6d-Vl-Qj0" id="ZdR-n2-4Ft"/>
@@ -145,6 +151,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ikx-GV-2yi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.92644888160000005" green="0.26348292829999997" blue="0.5804085135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

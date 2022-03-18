@@ -56,8 +56,8 @@ class GambitTableViewController: UITableViewController, GambitPresenterDelegate 
         self.objects[indexPath.row] = object
         completion(true)
         }
-        action.backgroundColor = object.isFavourite ?? true ? .systemGray: .systemPink
-        action.image = UIImage(systemName:  "heart")
+        action.backgroundColor = object.isFavourite ?? true ? .systemGray: .systemRed
+        action.image = object.isFavourite ?? false ? #imageLiteral(resourceName: "isFavorite") : #imageLiteral(resourceName: "isNotFavorite")
         return action
     }
     
