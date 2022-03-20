@@ -9,7 +9,7 @@
         <!--GAMBIT-->
         <scene sceneID="lXv-FN-32M">
             <objects>
-                <tableViewController id="tNL-LG-TwI" customClass="GambitTableViewController" sceneMemberID="viewController">
+                <tableViewController id="tNL-LG-TwI" customClass="GambitTableViewController" customModule="Gambit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Yj0-2E-47M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,8 +48,14 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrG-Od-lVw">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrG-Od-lVw" customClass="Button" customModule="Gambit" customModuleProvider="target">
                                             <rect key="frame" x="286" y="95" width="32" height="32"/>
                                             <color key="backgroundColor" red="1" green="0.24608737779440326" blue="0.58590287064885427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -58,11 +64,16 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="pressButtonMin:" destination="M7a-sh-eLP" eventType="touchUpInside" id="T5R-sO-Bd6"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzT-go-nVx">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzT-go-nVx" customClass="Button" customModule="Gambit" customModuleProvider="target">
                                             <rect key="frame" x="362" y="95" width="32" height="32"/>
                                             <color key="backgroundColor" red="1" green="0.24608737780000001" blue="0.58590287060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -71,6 +82,11 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="pressButtonPlus:" destination="M7a-sh-eLP" eventType="touchUpInside" id="9dv-WO-HGD"/>
                                             </connections>
@@ -85,13 +101,18 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGz-y7-Oaz">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGz-y7-Oaz" customClass="Button" customModule="Gambit" customModuleProvider="target">
                                             <rect key="frame" x="286" y="95" width="108" height="32"/>
                                             <color key="backgroundColor" red="1" green="0.24608737780000001" blue="0.58590287060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title=" корзина">
                                                 <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="korzina:" destination="M7a-sh-eLP" eventType="touchUpInside" id="raI-ls-7Dr"/>
                                             </connections>
@@ -166,6 +187,9 @@
     <designables>
         <designable name="EzT-go-nVx">
             <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="qGz-y7-Oaz">
+            <size key="intrinsicContentSize" width="83.5" height="31"/>
         </designable>
         <designable name="xrG-Od-lVw">
             <size key="intrinsicContentSize" width="30.5" height="31"/>

@@ -68,7 +68,7 @@ class GambitTableViewController: UITableViewController, GambitPresenterDelegate 
         
         let cell = tableView.dequeueReusableCell(withIdentifier: GambitTableViewCell.identifier) as! GambitTableViewCell
         }
-        cell.set(with: objects[indexPath.row])
+        cell.setFood(with: objects[indexPath.row])
 
         
         return cell
